@@ -1,0 +1,58 @@
+{
+  "id": "/",
+  "name": "月影町 ― 十三番目の回覧板",
+  "short_name": "月影町",
+  "description": "夕暮れの町を歩き、存在しない十三番目のお知らせを追う2.5D探索アドベンチャー。",
+  "lang": "ja-JP",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#10182d",
+  "theme_color": "#17233f",
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false,
+  "launch_handler": { "client_mode": "navigate-existing" },
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/title-desktop.png",
+      "sizes": "1366x768",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "月影町のタイトル"
+    },
+    {
+      "src": "/screenshots/title-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "スマートフォン版のタイトル"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "つづきから",
+      "short_name": "つづき",
+      "url": "/?continue=1",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "記録を見る",
+      "short_name": "記録",
+      "url": "/?records=1",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

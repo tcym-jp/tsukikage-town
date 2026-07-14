@@ -1,0 +1,101 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', system-ui, sans-serif;
+  color: #f6efd9;
+  background: #121a2f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  outline-offset: 4px;
+}
+
+:focus-visible {
+  outline: 3px solid #f6c36a;
+}
+
+.bootstrap {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 50% 18%, rgb(218 136 95 / 30%), transparent 32%),
+    linear-gradient(165deg, #273658 0%, #17223d 55%, #0d1428 100%);
+}
+
+.bootstrap__paper {
+  width: min(92vw, 620px);
+  padding: clamp(32px, 8vw, 72px);
+  color: #2f2a25;
+  text-align: center;
+  background: #efe4c6;
+  border: 1px solid #c7ad78;
+  box-shadow: 0 30px 80px rgb(0 0 0 / 35%);
+  transform: rotate(-0.4deg);
+}
+
+.bootstrap__eyebrow,
+.bootstrap__subtitle {
+  letter-spacing: 0.18em;
+}
+
+.bootstrap h1 {
+  margin: 12px 0 0;
+  font-family: 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+  font-size: clamp(42px, 10vw, 78px);
+  letter-spacing: 0.14em;
+}
+
+.bootstrap__subtitle {
+  margin: 4px 0 36px;
+  color: #374b75;
+  font-family: 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+}
+
+.bootstrap__rule {
+  width: 54px;
+  height: 2px;
+  margin: 30px auto;
+  background: #7a3940;
+}
+
+.bootstrap__loading {
+  color: #5d5549;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
