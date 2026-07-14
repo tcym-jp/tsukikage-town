@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
@@ -26,7 +26,8 @@
     "licenses:generate": "node scripts/generate-third-party-notices.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "quality": "npm run lint && npm run typecheck && npm run test && npm run validate:content && npm run build"
+    "quality": "npm run lint && npm run typecheck && npm run test && npm run validate:content && npm run build",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
+    "@cloudflare/vite-plugin": "^1.44.0",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -60,6 +62,7 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.64.0",
     "vite": "^8.1.4",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.110.0"
   }
 }
