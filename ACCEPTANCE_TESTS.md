@@ -257,4 +257,4 @@
 - [x] PC・一般的スマートフォンで最後まで操作可能
 - [x] Cloudflare Pagesへ公開可能な静的成果物を生成
 - [x] 本番デプロイを行わず、公開手順を文書化
-- [x] 最終コミット記録欄を用意：`FINAL_COMMIT_PENDING`
+- [x] 実装基準コミットを記録：`6aed8c975477`（最新HEADはGitHub `main`）

@@ -8,7 +8,7 @@
 - 現在のマイルストーン：M9 完了
 - 最終更新：2026-07-15（JST）
 - 最終E2E：22/22 passed（desktop-chrome 19、mobile-chrome 3、skip 0、fail 0、3.8分）
-- 最終コミット：`FINAL_COMMIT_PENDING`
+- 実装基準コミット：`6aed8c975477`
 - 再開コマンド：`npm ci && npm run quality && npm run test:e2e`
 
 ## 初期調査（2026-07-15）
@@ -138,7 +138,7 @@
 - [x] Git差分、履歴、機密、依存を確認し、tcym-jp新規リポジトリへ引き渡せる状態を作成
 - 受入：第三者がREADMEだけで起動、テスト、ビルドでき、静的公開可否を判断できる。
 - 検証：`npm ci && npm run quality && npm run test:e2e && npm audit --audit-level=high && git status -sb`
-- 結果：公開候補完成。クリーンな`npm ci`、本番依存ツリー、配布ライセンス、静的buildを再確認。本番Cloudflareデプロイは制約どおり実行せず、設定と手順まで提供した。最終コミットは`FINAL_COMMIT_PENDING`。
+- 結果：公開候補完成。クリーンな`npm ci`、本番依存ツリー、配布ライセンス、静的buildを再確認。本番Cloudflareデプロイは制約どおり実行せず、設定と手順まで提供した。実装基準コミットは`6aed8c975477`。この記録更新を含む最新HEADはGitHub `main`を正とする。
 
 ## 品質改善ループの完了条件
 

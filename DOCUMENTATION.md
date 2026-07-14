@@ -12,7 +12,7 @@
 - 進行不能：0
 - ビルド：成功。Cloudflare Pagesへ静的配置可能な`dist/`を生成
 - 最終E2E：22/22 passed（desktop-chrome 19、mobile-chrome 3、skip 0、fail 0、3.8分）
-- 最終コミット：`FINAL_COMMIT_PENDING`
+- 実装基準コミット：`6aed8c975477`
 - 本番デプロイ：未実行。明示制約どおり手順と成果物まで
 
 ## 完成した製品
@@ -220,9 +220,9 @@ UX仕様の12画面を1366×768と390×844で保存した。PNGはCSS viewport s
 
 - ブランチ：`main`
 - リポジトリ：既存履歴のない新規プロジェクトとして初期化
-- 最終コミット：`FINAL_COMMIT_PENDING`
+- 実装基準コミット：`6aed8c975477`
 - force push、履歴破壊、本番デプロイ、秘密情報の追加：なし
-- GitHub：`https://github.com/tcym-jp/tsukikage-town`を新規作成。通常push前の公開候補
+- GitHub：`https://github.com/tcym-jp/tsukikage-town`。最新の公開コミットはGitHub `main`を正とする
 
 ## 既知のLow/制約
 
@@ -273,5 +273,5 @@ git status -sb
 - 検証：lint、typecheck、unit/component、content、story、PWA、build、desktop/mobile E2E、offline、a11y、5 viewport、各12画像を成功確認
 - デプロイ可否：可。Cloudflare Pages向け静的成果物と公開手順あり。本番デプロイ自体は未実行
 - 既知問題：Critical 0 / High 0。Low/ブラウザ依存の制約は上記のとおり
-- Git：`main`、最終コミット`FINAL_COMMIT_PENDING`
+- Git：`main`、実装基準コミット`6aed8c975477`。文書自身のhashを埋め込む自己参照を避け、最新HEADはGitHub `main`を正とする
 - 最終E2E：22/22 passed（desktop 19 / mobile 3、skip 0、fail 0）
